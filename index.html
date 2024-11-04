@@ -38,7 +38,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
         
 	</head>
 
-	<body>
+	<body class="dark">
 		<!-- MATERIALIZE -->
 		<script type="text/javascript" src="static/js/materialize.min.js"></script>
 		<!-- MAIN -->
@@ -51,9 +51,9 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
                 </a> 
                 
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a class="btn dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons">brightness_4</i></a></li>
+                
+                <ul id="nav-mobile" class="left">
+                <li><a class="dark-toggle" onclick="toggle_darkmode(this)" title="Hell/Dunkel"><i class="material-icons">light_mode</i></a></li>
                 </ul>
 
 
@@ -76,8 +76,6 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
             <li><a class="waves-effect" href="https://wa.me/message/ENG3ONGOWCWTD1">WhatsApp</a></li>
             <li><a class="waves-effect" href="https://github.com/mawigh">GitHub</a></li>
             <li><a class="waves-effect" href="https://www.instagram.com/mawidev/">Instagram</a></li>
-            <li><div class="divider"></div></li>
-            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Dark Mode an/aus</a></li>
           </ul>
 
 

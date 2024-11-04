@@ -1,3 +1,3 @@
-# mawidev.github.io
+# mawidev
 
-https://mawidev.github.io
+https://mawidev.de
