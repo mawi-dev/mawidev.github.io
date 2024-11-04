@@ -33,7 +33,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
         <title>mawidev</title>
         <!-- Alles für die Suchmaschinen :-) -->
         <meta name="description" content="Ich bin Marcel, ein erfahrener Softwareentwickler aus Paderborn. Webseiten, Schnittstellenprogrammierung und Automatisierung bestehender Prozesse.">
-        <meta name="theme-color" content="#00feb7"></meta>
+        <meta name="theme-color" content="#186e67"></meta>
 
         
 	</head>
@@ -52,6 +52,11 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
                 
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="btn dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons">brightness_4</i></a></li>
+                </ul>
+
+
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#dienstleistungen"><i class="material-icons left">construction</i> Dienstleistungen</a></li> 
                     <li><a href="#referenzen"><i class="material-icons left">shortcut</i> Referenzen</a></li> 
@@ -62,6 +67,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
 
         <ul id="slide-out" class="sidenav">
             <li><a class="subheader">mawidev</a></li>
+            
             <li><a href="#kontakt"><i class="material-icons">call</i> Kontakt</a></li>
             <li><a href="#dienstleistungen"><i class="material-icons">construction</i> Dienstleistungen</a></li>
             <li><a href="#referenzen"><i class="material-icons">shortcut</i> Referenzen</a></li>
@@ -70,10 +76,12 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
             <li><a class="waves-effect" href="https://wa.me/message/ENG3ONGOWCWTD1">WhatsApp</a></li>
             <li><a class="waves-effect" href="https://github.com/mawigh">GitHub</a></li>
             <li><a class="waves-effect" href="https://www.instagram.com/mawidev/">Instagram</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="dark-toggle" href="#" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'light' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Dark/light"><i class="material-icons left">brightness_4</i> Dark Mode an/aus</a></li>
           </ul>
 
 
-      <div class="section white scrollspy" id="dienstleistungen">
+      <div class="white section scrollspy" id="dienstleistungen">
         <div class="row container center">
             
             <h2 class="header">Willkommen bei <span style="color: #02cd93;">mawidev</span></h2>
@@ -95,7 +103,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
       <div class="section white scrollspy" id="kontakt">
         <div class="row container center">
           <h2 class="header">Kontakt</h2>
-            <img class="profile_image" src="static/images/me.png" draggable="false"></img>
+            <!-- <img class="profile_image" src="static/images/me.png" draggable="false"></img> -->
 
             <div class="row" style="padding-top: 2%;">
                 <a class="waves-effect waves-light btn-small" style="width: 280px;" href="tel:+4915560308463"><i class="material-icons left">call</i> 0155 60308463</a>
@@ -114,16 +122,16 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
 
           <h3 class="header">Kontaktformular</h3>
         <div class="row">
-            <form class="col s6" method="POST" action="https://formspree.io/f/mgveabkq">
+            <form class="col s12" method="POST" action="https://formspree.io/f/mgveabkq">
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                 <input id="email" name="email" type="text" class="validate" required="required">
                 <label for="email">Deine E-Mail *</label>
                 </div>
             </div>
 
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                 <input id="number" name="number" type="tel" class="validate">
                 <label for="number">Telefonnummer</label>
                 </div>
@@ -132,7 +140,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
 
             </div>
             <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                 <textarea id="message" name="message" class="materialize-textarea" required="required"></textarea>
                 <label for="message">Deine Nachricht *</label>
                 </div>
