@@ -2,6 +2,11 @@
 <!-- Moin :-) -->
 <html>
 	<head>
+
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Webseiten, Schnittstellenprogrammierung, Automatisierung">
+        <meta name="author" content="Marcel-Brian Wilkowsky">
+
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<!-- MATERIALIZE -->
@@ -17,6 +22,8 @@
         <title>mawidev</title>
         <!-- Alles für die Suchmaschinen :-) -->
         <meta name="description" content="Ich bin Marcel, ein erfahrener Softwareentwickler aus Paderborn. Webseiten, Schnittstellenprogrammierung und Automatisierung bestehender Prozesse.">
+        <meta name="theme-color" content="#00feb7"></meta>
+
         
 	</head>
 
@@ -32,15 +39,27 @@
                     mawidev
                 </a> 
                 
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#dienstleistungen">Dienstleisungen</a></li> 
-                    <li><a href="#referenzen">Referenzen</a></li> 
+                    <li><a href="#dienstleistungen"><i class="material-icons left">construction</i> Dienstleistungen</a></li> 
+                    <li><a href="#referenzen"><i class="material-icons left">shortcut</i> Referenzen</a></li> 
                     <li><a class="waves-effect waves-light btn btn-main" href="#kontakt">Kontakt</a></li> 
                 </ul> 
             </div> 
         </nav>
+
+        <ul id="slide-out" class="sidenav">
+            <li><a class="subheader">mawidev</a></li>
+            <li><a href="#kontakt"><i class="material-icons">call</i> Kontakt</a></li>
+            <li><a href="#dienstleistungen"><i class="material-icons">construction</i> Dienstleistungen</a></li>
+            <li><a href="#referenzen"><i class="material-icons">shortcut</i> Referenzen</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Soziale Netzwerke</a></li>
+            <li><a class="waves-effect" href="https://wa.me/message/ENG3ONGOWCWTD1">WhatsApp</a></li>
+            <li><a class="waves-effect" href="https://github.com/mawigh">GitHub</a></li>
+            <li><a class="waves-effect" href="https://www.instagram.com/mawidev/">Instagram</a></li>
+          </ul>
 
 
       <div class="section white scrollspy" id="dienstleistungen">
@@ -48,9 +67,10 @@
             
             <h2 class="header">Willkommen bei <span style="color: #02cd93;">mawidev</span></h2>
             <img class="profile_image" src="static/images/me.png" draggable="false"></img>
-            <p class="grey-text text-darken-3 lighten-3">
+            <!-- <p class="grey-text text-darken-3 lighten-3"> -->
+            <p class="flow-text">
             Hallo, ich bin Marcel. Ein erfahrener Softwareentwickler aus Paderborn.
-
+            Ich entwickle Webseiten, programmiere Schnittstellen oder automatisiere bestehende Geschäftsprozesse.
             </p>
          
         </div>
@@ -62,8 +82,25 @@
 
       <!-- KONTAKT -->
       <div class="section white scrollspy" id="kontakt">
-        <div class="row container">
+        <div class="row container center">
           <h2 class="header">Kontakt</h2>
+            <img class="profile_image" src="static/images/me.png" draggable="false"></img>
+
+            <div class="row" style="padding-top: 2%;">
+                <a class="waves-effect waves-light btn-small" style="width: 280px;" href="tel:+4915560308463"><i class="material-icons left">call</i> 0155 60308463</a>
+            </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn-small" style="width: 280px;" href="https://wa.me/message/ENG3ONGOWCWTD1"><i class="material-icons left">share</i> WhatsApp</a>
+            </div>
+            <div class="row">
+                <a class="waves-effect waves-light btn-small" style="width: 280px;" href="mailto:marcel@mawidev.de"><i class="material-icons left">mail</i> marcel@mawidev.de</a>
+            </div>
+            <div class="row" style="padding-bottom: 2%">
+                <a class="waves-effect waves-light btn-small" style="width: 280px;" href="https://www.instagram.com/mawidev/"><i class="material-icons left">public</i> Instagram</a>
+            </div>
+
+            <hr style="width: 50%"></hr>
+
           <h3 class="header">Kontaktformular</h3>
         <div class="row">
             <form class="col s6" method="POST" action="https://formspree.io/f/mgveabkq">
