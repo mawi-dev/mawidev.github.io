@@ -20,11 +20,32 @@
   src: url('static/fonts/Changa-Medium.ttf');
 }
 
+.parallax-container {
+  height: 250px;
+}
+
+footer {
+  font-family: 'Changa', sans-serif; /* Use the font family */
+  transition: color 1s ease, background-color 1s ease;
+}
+
+footer.dark {
+  background-color: #202123;
+  color: #fff;
+}
+footer.dark a:hover{
+  color: #27a79c;
+}
+footer.dark .section {
+  background-color: #202123 !important;
+}
+
 body {
   font-family: 'Changa', sans-serif; /* Use the font family */
   background-color: #eee;
   transition: color 1s ease, background-color 1s ease;
 }
+
 body.dark {
   background-color: #202123;
   color: #fff;
@@ -38,7 +59,11 @@ body.dark .section {
 body.dark .card {
   background-color: rgba(255, 255, 255, 0.2);
 }
-body.dark .btn  .btn-small{
+body.dark .btn {
+  background-color: #186e67;
+}
+
+body.dark .btn-small {
   background-color: #186e67;
 }
 body.dark .divider {
@@ -73,7 +98,7 @@ nav {
 }
 
 footer {
-  background-color: #00242d;
+  background-color: #00242d !important;
 }
 
 footer a:hover {
