@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Moin :-) -->
+<html>
+	<head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- MATERIALIZE -->
+		<link type="text/css" rel="stylesheet" href="static/css/materialize.min.css"  media="screen,projection"/>
+		<!-- MAIN CSS -->
+		<link type="text/css" rel="stylesheet" href="static/css/main.css"/>
+
+        <link rel="icon" type="image/png" href="/static/images/mawidev.png">
+
+		<!-- Tragebare Schnurtelefone müssen ebenfalls beachtet werden -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <title>mawidev</title>
+        <!-- Alles für die Suchmaschinen :-) -->
+        <meta name="description" content="Ich bin Marcel, ein erfahrener Softwareentwickler aus Paderborn. Webseiten, Schnittstellenprogrammierung und Automatisierung bestehender Prozesse.">
+        
+	</head>
+
+	<body>
+		<!-- MATERIALIZE -->
+		<script type="text/javascript" src="static/js/materialize.min.js"></script>
+		<!-- MAIN -->
+		<script type="text/javascript" src="static/js/main.js"></script>
+
+        <nav> 
+            <div class="nav-wrapper"> 
+                <a href="#" class="brand-logo center">
+                    mawidev
+                </a> 
+                
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#dienstleistungen">Dienstleisungen</a></li> 
+                    <li><a href="#referenzen">Referenzen</a></li> 
+                    <li><a class="waves-effect waves-light btn btn-main" href="#kontakt">Kontakt</a></li> 
+                </ul> 
+            </div> 
+        </nav>
+
+
+      <div class="section white scrollspy" id="dienstleistungen">
+        <div class="row container center">
+            
+            <h2 class="header">Willkommen bei <span style="color: #02cd93;">mawidev</span></h2>
+            <img class="profile_image" src="static/images/me.png" draggable="false"></img>
+            <p class="grey-text text-darken-3 lighten-3">
+            Hallo, ich bin Marcel. Ein erfahrener Softwareentwickler aus Paderborn.
+
+            </p>
+         
+        </div>
+      </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+      </div>
+
+      <!-- KONTAKT -->
+      <div class="section white scrollspy" id="kontakt">
+        <div class="row container">
+          <h2 class="header">Kontakt</h2>
+          <h3 class="header">Kontaktformular</h3>
+        <div class="row">
+            <form class="col s6" method="POST" action="https://formspree.io/f/mgveabkq">
+            <div class="row">
+                <div class="input-field col s6">
+                <input id="email" name="email" type="text" class="validate" required="required">
+                <label for="email">Deine E-Mail *</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                <input id="number" name="number" type="tel" class="validate">
+                <label for="number">Telefonnummer</label>
+                </div>
+            </div>
+
+
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                <textarea id="message" name="message" class="materialize-textarea" required="required"></textarea>
+                <label for="message">Deine Nachricht *</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" name="action">Abschicken
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+            </form>
+        </div> 
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+      </div>
+
+      <!-- DIENSTLEISTUNGEN -->
+      <div class="section white scrollspy" id="dienstleistungen">
+        <div class="row container">
+          <h2 class="header">Dienstleisungen</h2>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+      </div>
+
+      <!-- REFERENZEN -->
+      <div class="section white scrollspy" id="dienstleistungen">
+        <div class="row container">
+          <h2 class="header">Referenzen</h2>
+        </div>
+      </div>
+
+
+    </body>
+          
+</html>

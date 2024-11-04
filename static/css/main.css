@@ -1,0 +1,78 @@
+/* Custom font implementation */
+@font-face {
+  font-family: Changa;
+  src: url('../../static/fonts/Changa-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: Changa-Bold;
+  src: url('static/fonts/Changa-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Changa-Light;
+  src: url('static/fonts/Changa-Light.ttf');
+  font-weight: lighter;
+
+}
+@font-face {
+  font-family: Changa-Medium;
+  src: url('static/fonts/Changa-Medium.ttf');
+}
+
+body {
+  font-family: 'Changa', sans-serif; /* Use the font family */
+
+}
+
+nav {
+  background-color: #00242d;
+}
+
+footer {
+  background-color: #00242d;
+}
+
+footer a:hover {
+  color: #00feb7;
+}
+
+nav a:hover {
+  color: #00feb7;
+}
+
+.btn-main {
+  background-color: #00feb7;
+  color: #00242d;
+}
+
+.btn-main:hover {
+  color: #000000;
+}
+
+.brand-logo {
+  display: inline-block;
+  height: 100%;
+}
+
+.profile_image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 2px solid #272133;
+  margin-top: 20px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: rgba(0, 254, 183, 0.5);
+}
+
+::selection {
+  background: rgba(0, 254, 183, 0.5);
+}
+
