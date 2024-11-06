@@ -56,7 +56,17 @@ body.dark nav a:hover{
 body.dark .section {
   background-color: #202123 !important;
 }
-body.dark .card {
+.parallax_image {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+body.dark .parallax_image {
+  filter: grayscale(70%);
+}
+body.dark .card-panel {
   background-color: rgba(255, 255, 255, 0.2);
 }
 body.dark .btn {
@@ -108,6 +118,11 @@ footer a:hover {
 nav a:hover {
   color: #00feb7;
 }
+
+/* .card {
+  height: 350px;
+  overflow: hidden;
+} */
 
 .btn-main {
   background-color: #00feb7;

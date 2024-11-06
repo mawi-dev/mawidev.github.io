@@ -38,7 +38,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
         
 	</head>
 
-	<body class="dark">
+	<body>
 		<!-- MATERIALIZE -->
 		<script type="text/javascript" src="static/js/materialize.min.js"></script>
 		<!-- MAIN -->
@@ -53,13 +53,13 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                 
                 <ul id="nav-mobile" class="left">
-                <li><a class="dark-toggle" onclick="toggle_darkmode(this)" title="Hell/Dunkel"><i class="material-icons">light_mode</i></a></li>
+                <li><a class="dark-toggle" name="dark_toggle" onclick="toggle_darkmode(this)" title="Hell/Dunkel"><i class="material-icons" name="dark_toggle_icon">light_mode</i></a></li>
                 </ul>
 
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#dienstleistungen"><i class="material-icons left">construction</i> Dienstleistungen</a></li> 
-                    <li><a href="#referenzen"><i class="material-icons left">shortcut</i> Referenzen</a></li> 
+                    <!-- <li><a href="#referenzen"><i class="material-icons left">shortcut</i> Referenzen</a></li> -->
                     <li><a class="waves-effect waves-light btn btn-main" href="#kontakt">Kontakt</a></li> 
                 </ul> 
             </div> 
@@ -70,7 +70,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
             
             <li><a href="#kontakt"><i class="material-icons">call</i> Kontakt</a></li>
             <li><a href="#dienstleistungen"><i class="material-icons">construction</i> Dienstleistungen</a></li>
-            <li><a href="#referenzen"><i class="material-icons">shortcut</i> Referenzen</a></li>
+            <!-- <li><a href="#referenzen"><i class="material-icons">shortcut</i> Referenzen</a></li> -->
             <li><div class="divider"></div></li>
             <li><a class="subheader">Soziale Netzwerke</a></li>
             <li><a class="waves-effect" href="https://wa.me/message/ENG3ONGOWCWTD1">WhatsApp</a></li>
@@ -86,15 +86,15 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
             <img class="profile_image" src="static/images/me.png" draggable="false"></img>
             <!-- <p class="grey-text text-darken-3 lighten-3"> -->
             <p class="flow-text">
-            Hallo, ich bin Marcel. Ein erfahrener Softwareentwickler aus Paderborn.
-            Ich entwickle Webseiten, programmiere Schnittstellen oder automatisiere bestehende Geschäftsprozesse.
+              Ich bin Marcel, ein erfahrener Softwareentwickler aus Paderborn.
+              Ich baue Webseiten, für dich angepasste Schnittstellen, optimiere Prozesse durch den Einsatz selbstgebauter Software oder integriere neue Software in bestehnde Infrastruktur. 
             </p>
          
         </div>
       </div>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+        <div class="parallax"><img class="parallax_image" draggable="false" src="static/images/pb_dom.jpg"></div>
       </div>
 
       <!-- KONTAKT -->
@@ -154,34 +154,71 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
       </div>
 
       <div class="parallax-container">
-        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+        <div class="parallax"><img class="parallax_image" draggable="false" src="static/images/pb_schloss.jpg"></div>
       </div>
 
       <!-- DIENSTLEISTUNGEN -->
       <div class="section white scrollspy" id="dienstleistungen">
         <div class="row container">
-            <h2 class="header">Dienstleisungen</h2>
+            <h2 class="header">Dienstleistungen</h2>
 
-            <p class="flow-text">
-                Erfahrungen in Python und PHP. CMS wie Typo3 oder Wordpress. WIP
-                ...
-            </p>
+
+
+            <!-- TESTING -->
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <h4>Webseiten</h4>
+                <div class="card-panel">
+                  <span class="">
+                        Ich erstelle maßgeschneiderte Webseiten, die genau auf deine Bedürfnisse und die deines Unternehmens zugeschnitten sind. Meine Designs sind nicht nur ästhetisch ansprechend, sondern auch benutzerfreundlich und für alle Endgeräte optimiert.
+                  </span>
+                </div>
+              </div>
+              <div class="col s12 m6 l6">
+                <h4>Prozessanbindung</h4>
+                <div class="card-panel">
+                  <span class="">
+                        Ich integriere deine neue Webseite nahtlos in deine bestehenden Geschäftsprozesse. Ob es sich um CRM-Systeme, ERP-Systeme oder andere interne Tools handelt, ich sorge dafür, dass alles reibungslos zusammenarbeitet.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <h4>Integration</h4>
+                <div class="card-panel">
+                  <span class="">
+                    Nutze die Vorteile moderner Technologien, indem ich verschiedene Dienste und Anwendungen in deine Webseite integriere. Dies umfasst Zahlungsgateways, Marketing-Tools, Analytik-Plattformen und vieles mehr, um deine Online-Präsenz zu stärken und deine Geschäftsprozesse zu optimieren.
+                  </span>
+                </div>
+              </div>
+              
+              <div class="col s12 m6 l6">
+                <h4>Schnittstellen</h4>
+                <div class="card-panel">
+                  <span class="">
+                    Ich entwickeln maßgeschneiderte APIs und weitere Schnittstellen, die es ermöglichen, dass deine Systeme effizient miteinander kommunizieren. So stelle ich sicher, dass Daten in Echtzeit ausgetauscht und verarbeitet werden können, was die Effizienz und Leistungsfähigkeit deiner Geschäftsprozesse erheblich steigert.
+                  </span>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
 
       <div class="parallax-container">
-        <div class="parallax"><img src="static/images/parallax.jpg"></div>
+        <div class="parallax"><img class="parallax_image" draggable="false" src="static/images/pb_pader.jpg"></div>
       </div>
 
 
-      <div class="section white">
+      <!-- <div class="section white">
 
-      <!-- REFERENZEN -->
+       REFERENZEN 
         <div class="row container scrollspy" id="referenzen">
           <h2 class="header">Referenzen</h2>
           <h3 class="subheader">Projekte</h2>
         </div>
-      </div>
+      </div> -->
 
     </body>
 

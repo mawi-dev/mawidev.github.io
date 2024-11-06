@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
 
-	// sets default do dark mode
-	localStorage.setItem('mode', 'dark');
-
 });
 
 function toggle_darkmode(elem) {
@@ -30,3 +27,62 @@ function toggle_darkmode(elem) {
 		elem.childNodes[0].innerHTML = 'light_mode';
 	}
 }
+
+function setColorScheme(scheme) {
+	var body = document.querySelector('body');
+	var icon = document.getElementsByName('dark_toggle_icon');
+	switch(scheme){
+	  case 'dark':
+		body.classList.add('dark');
+		body.classList.remove('light');
+
+		localStorage.setItem('mode', 'dark');
+
+		icon[0] = 'light_mode';
+		
+		break;
+	  case 'light':
+		body.classList.remove('dark');
+		localStorage.setItem('mode', 'light');
+
+		icon[0] = 'dark_mode';
+		break;
+	  default:
+		body.classList.remove('dark');
+		localStorage.setItem('mode', 'light');
+
+		icon[0] = 'dark_mode';
+		break;
+	}
+  }
+
+function getPreferredColorScheme() {
+	// if the user overrides to system default
+	//var savedColorScheme = localStorage.getItem('mode');
+	//if (savedColorScheme) {
+	//	return savedColorScheme;
+	//}
+
+	if (window.matchMedia) {
+	  if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+		return 'dark';
+	  } else {
+		return 'light';
+	  }
+	}
+	return 'light';
+}
+
+// adding event listener
+function updateColorScheme(){
+	preferred = getPreferredColorScheme();
+    setColorScheme(preferred);
+	console.log("preferred = " + preferred);
+}
+
+if(window.matchMedia){
+	var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+	colorSchemeQuery.addEventListener('change', updateColorScheme);
+}
+
+updateColorScheme();
