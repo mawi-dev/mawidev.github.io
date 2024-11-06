@@ -39,6 +39,13 @@ footer.dark a:hover{
 footer.dark .section {
   background-color: #202123 !important;
 }
+.mawidev {
+  color: #02cd93;
+}
+
+body.dark .mawidev {
+  color: #186e67;
+}
 
 body {
   font-family: 'Changa', sans-serif; /* Use the font family */
@@ -64,7 +71,7 @@ body.dark .section {
   user-select: none;
 }
 body.dark .parallax_image {
-  filter: grayscale(70%);
+  filter: grayscale(850%);
 }
 body.dark .card-panel {
   background-color: rgba(255, 255, 255, 0.2);
