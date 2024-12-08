@@ -52,14 +52,14 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
                 <a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
                 
                 <ul id="nav-mobile" class="left">
-                <li><a class="dark-toggle" name="dark_toggle" onclick="toggle_darkmode(this)" title="Hell/Dunkel"><i class="material-icons" name="dark_toggle_icon">light_mode</i></a></li>
+                <li><a class="dark-toggle" name="dark_toggle" onclick="toggle_darkmode(this)" title="Hell/Dunkel"><i class="material-icons" name="dark_toggle_icon" id="page_theme_icon">light_mode</i></a></li>
                 </ul>
 
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#dienstleistungen"><i class="material-icons left">construction</i> Dienstleistungen</a></li> 
                     <!-- <li><a href="#referenzen"><i class="material-icons left">shortcut</i> Referenzen</a></li> -->
-                    <li><a class="waves-effect waves-light btn btn-main" href="#kontakt">Kontakt</a></li> 
+                    <li><a class="waves-effect btn" href="#kontakt">Kontakt</a></li> 
                 </ul> 
             </div> 
         </nav>
@@ -157,48 +157,73 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
       </div>
 
       <!-- DIENSTLEISTUNGEN -->
+
       <div class="section white scrollspy" id="dienstleistungen">
-        <div class="row container">
+
+        <div class="row container center">
             <h2 class="header">Dienstleistungen</h2>
 
-            <div class="row">
+            <div class="row mba">
               <div class="col s12 m6 l6">
-                <h4>Webseiten</h4>
-                <div class="card-panel">
-                  <span class="">
-                        Ich erstelle maßgeschneiderte Webseiten, die genau auf deine Bedürfnisse und die deines Unternehmens zugeschnitten sind. Meine Designs sind nicht nur ästhetisch ansprechend, sondern auch benutzerfreundlich und für alle Endgeräte optimiert.
-                  </span>
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title"><i class="material-icons">imagesearch_roller</i> Außendarstellung</span>
+                    <p>Professionelle Webseite für dein Unternehmen.</br>Logodesign, Blogs, Shops, SEO und mehr</p>
+                  </div>
+                  <!-- <div class="card-action">
+                    <a class="service-btn" href="/dienstleistungen.html">Mehr hier</a>
+                  </div> -->
                 </div>
               </div>
+
               <div class="col s12 m6 l6">
-                <h4>Prozessanbindung</h4>
-                <div class="card-panel">
-                  <span class="">
-                        Ich integriere deine neue Webseite nahtlos in deine bestehenden Geschäftsprozesse. Ob es sich um CRM-Systeme, ERP-Systeme oder andere interne Tools handelt, ich sorge dafür, dass alles reibungslos zusammenarbeitet.
-                  </span>
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title"><i class="material-icons">wysiwyg</i> Software</span>
+                    <p>Individuelle Software.</br>Von Schnitstellen bis Self-Service Portale</p>
+                  </div>
+                  <!-- <div class="card-action">
+                    <a class="service-btn" href="/dienstleistungen.html">Mehr hier</a>
+                  </div> -->
                 </div>
               </div>
+
+
             </div>
 
             <div class="row">
-              <div class="col s12 m6 l6">
-                <h4>Integration</h4>
-                <div class="card-panel">
-                  <span class="">
-                    Nutze die Vorteile moderner Technologien, indem ich verschiedene Dienste und Anwendungen in deine Webseite integriere. Dies umfasst Zahlungsgateways, Marketing-Tools, Analytik-Plattformen und vieles mehr, um deine Online-Präsenz zu stärken und deine Geschäftsprozesse zu optimieren.
-                  </span>
+              <!-- <div class="col s12 m6 l6">
+                <div class="card">
+                  <div class="card-content">
+                    
+                    <span class="card-title"><i class="material-icons">account_tree</i> Prozesse</span>
+                    <p>I am a very simple card small bits of information.</br>hehe</p>
+                  </div>
+                  <div class="card-action">
+                    <a class="service-btn" href="/dienstleistungen.html">Mehr hier</a>
+                  </div>
+                </div>
+              </div> -->
+
+              <div class="col s12 m12 l12">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title"><i class="material-icons">manage_history</i> Automatisierung</span>
+                    <p>Automatisierung von Prozessen.</br>Geschäftsprozesse, Software und weiteres<p>
+                  </div>
+                  <!-- <div class="card-action">
+                    <a class="service-btn" href="/dienstleistungen.html">Mehr hier</a>
+                  </div> -->
                 </div>
               </div>
-              
-              <div class="col s12 m6 l6">
-                <h4>Schnittstellen</h4>
-                <div class="card-panel">
-                  <span class="">
-                    Ich entwickle maßgeschneiderte APIs und weitere Schnittstellen, die es ermöglichen, dass deine Systeme effizient miteinander kommunizieren. So stelle ich sicher, dass Daten in Echtzeit ausgetauscht und verarbeitet werden können, was die Effizienz und Leistungsfähigkeit deiner Geschäftsprozesse erheblich steigert.
-                  </span>
-                </div>
-              </div>
+
+
             </div>
+
+            <div class="row" style="padding-top: 2%">
+                <a class="waves-effect waves-light btn-small" style="width: 280px;" href="#kontakt"><i class="material-icons left">perm_contact_calendar</i> Jetzt Kontakt aufnehmen</a>
+            </div>
+
         </div>
       </div>
 
@@ -237,7 +262,7 @@ __        _____ _     _     _  _____  __  __ __  __ _____ _   _
         </div>
         <div class="footer-copyright">
           <div class="container">
-            © 2024 Marcel-Brian Wilkowsky
+            © 2024 mawidev - Marcel-Brian Wilkowsky
           <a class="grey-text text-lighten-4 right" href="impressum.html">Impressum</a>
           </div>
         </div>
