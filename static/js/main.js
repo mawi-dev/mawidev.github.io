@@ -30,7 +30,7 @@ function toggle_darkmode(elem) {
 
 function setColorScheme(scheme) {
 	var body = document.querySelector('body');
-	var icon = document.getElementsByName('dark_toggle_icon');
+	var icon = document.getElementById('page_theme_icon');
 	switch(scheme){
 	  case 'dark':
 		body.classList.add('dark');
@@ -38,30 +38,36 @@ function setColorScheme(scheme) {
 
 		localStorage.setItem('mode', 'dark');
 
-		icon[0] = 'light_mode';
+
+		icon.innerHTML = 'light_mode';
+
+		console.log("setting dark mode. icon to light_mode")
 		
 		break;
 	  case 'light':
 		body.classList.remove('dark');
 		localStorage.setItem('mode', 'light');
+		console.log("setting light mode. icon to dark_mode")
 
-		icon[0] = 'dark_mode';
+		console.log(icon);
+		icon.innerHTML = 'dark_mode';
 		break;
 	  default:
 		body.classList.remove('dark');
 		localStorage.setItem('mode', 'light');
+		console.log("setting light mode. icon to dark_mode 2")
 
-		icon[0] = 'dark_mode';
+		icon.innerHTML = 'dark_mode';
 		break;
 	}
   }
 
 function getPreferredColorScheme() {
 	// if the user overrides to system default
-	//var savedColorScheme = localStorage.getItem('mode');
-	//if (savedColorScheme) {
-	//	return savedColorScheme;
-	//}
+	var savedColorScheme = localStorage.getItem('mode');
+	if (savedColorScheme) {
+		return savedColorScheme;
+	}
 
 	if (window.matchMedia) {
 	  if(window.matchMedia('(prefers-color-scheme: dark)').matches){

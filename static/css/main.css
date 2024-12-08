@@ -24,6 +24,10 @@
   height: 250px;
 } */
 
+.mba {
+  margin-bottom: auto !important;
+}
+
 footer {
   font-family: 'Changa', sans-serif; /* Use the font family */
   transition: color 1s ease, background-color 1s ease;
@@ -57,8 +61,18 @@ body.dark {
   background-color: #202123;
   color: #fff;
 }
-body.dark nav a:hover{
-  color: #27a79c;
+body.dark .service-btn {
+  color: #00feb7 !important;
+}
+body.dark .btn:hover {
+  background-color: #104b47;
+}
+
+body.dark .btn-small:hover{
+  background-color: #104b47;
+}
+body.dark button:hover{
+  background-color: #104b47 !important;
 }
 body.dark .section {
   background-color: #202123 !important;
@@ -74,6 +88,9 @@ body.dark .parallax_image {
   filter: grayscale(850%);
 }
 body.dark .card-panel {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark .card {
   background-color: rgba(255, 255, 255, 0.2);
 }
 body.dark .btn {
@@ -101,12 +118,22 @@ body.dark .sidenav li a.subheader {
 body.dark .sidenav li a .material-icons {
   color: #9aa0a6;
 }
+body.dark input {
+  color: #ffffff;
+}
+body.dark textarea {
+  color: #ffffff;
+}
 body.dark .collection {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 body.dark .collection .collection-item {
   background-color: rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark .service-btn {
+  color: #186e67;
 }
 
 
@@ -122,7 +149,7 @@ footer a:hover {
   color: #00feb7;
 }
 
-nav a:hover {
+nav .brand-logo:hover {
   color: #00feb7;
 }
 
@@ -131,13 +158,12 @@ nav a:hover {
   overflow: hidden;
 } */
 
-.btn-main {
-  background-color: #00feb7;
-  color: #00242d;
+.service-btn {
+  color: #186e67 !important;
 }
 
-.btn-main:hover {
-  color: #000000;
+.card-action a:hover{
+  color: #3b4043 !important;
 }
 
 .brand-logo {
