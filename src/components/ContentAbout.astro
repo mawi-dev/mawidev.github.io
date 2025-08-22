@@ -1,0 +1,111 @@
+---
+import { Code } from 'astro:components';
+
+const code = `interface Developer {
+    name: string;
+    skills: string[];
+    interests: string[];
+};
+
+interface TechStack {
+    devOps: string[];
+    backend: string[];
+   frontend: string[];
+};
+
+type ContactType = 'phone' | 'github' | 'linkedIn' | 'email';
+
+const techStack: TechStack = {
+    devOps: [
+        'GitLab',
+        'GitHub',
+        'Docker/Podman'
+    ],
+    frontend: [
+        'Angular',
+        'JavaScript',
+        'TypeScript',
+        'TailwindCSS',
+        'Astro',
+        'Capacitor',
+        'Markdown',
+        'WordPress'
+    ],
+    backend: [
+        'Python',
+        'PHP',
+        'Node.js',
+        'MySQL',
+        'SQLite',
+        'PostgreSQL',
+        'MongoDB',
+    ]
+};
+
+// Developer profile
+const me: Developer = {
+    name: 'Marcel',
+    skills: [
+        ...techStack.devOps,
+        ...techStack.backend,
+        ...techStack.frontend
+    ],
+    interests: [
+        'Open Source',
+        'Security',
+        'Privacy',
+        'Performance',
+        'Self-hosting',
+        'Networking'
+    ]
+};
+
+// Contact function
+const contact = (type: ContactType): string => {
+    switch (type) {
+        case 'phone':
+            return '+4917663875033';
+        case 'github':
+            return 'https://github.com/mawigh';
+        case 'linkedIn':
+            return 'https://www.linkedin.com/in/marcel-brian-wilkowsky-67b0a518b';
+        case 'email':
+            return 'kontakt@mawidev.de';
+        default:
+            return 'https://www.rfc-editor.org/rfc/rfc1149';
+    }
+};
+
+`;
+---
+
+<Code
+    code={code}
+    lang="js"
+    wrap={true}
+/>
+
+<style is:global>
+
+    /* Custom styling for code block line numbers */
+    pre.astro-code {
+        @apply bg-transparent !important;
+    }
+
+    pre.astro-code code {
+        @apply block;
+        counter-reset: step;
+        counter-increment: step 0;
+    }
+
+    pre.astro-code code .line {
+        @apply relative;
+    }
+
+    pre.astro-code code .line::before {
+        content: counter(step);
+        counter-increment: step;
+        @apply text-gray-600 pr-2;
+    }
+
+</style>
