@@ -19,5 +19,8 @@
         "@astrojs/tailwind": "^5.1.4",
         "astro-compress": "^2.3.6",
         "sass": "^1.85.1"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": ["@parcel/watcher", "esbuild", "sharp"]
     }
 }
