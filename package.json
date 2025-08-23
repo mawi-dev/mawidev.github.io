@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "astro": "^5.4.2",
+        "sharp": "^0.34.3",
         "shiki": "^3.1.0",
         "swetrix": "^3.5.4",
         "tailwindcss": "^3.4.17"
@@ -21,6 +22,10 @@
         "sass": "^1.85.1"
     },
     "pnpm": {
-        "onlyBuiltDependencies": ["@parcel/watcher", "esbuild", "sharp"]
+        "onlyBuiltDependencies": [
+            "@parcel/watcher",
+            "esbuild",
+            "sharp"
+        ]
     }
 }
